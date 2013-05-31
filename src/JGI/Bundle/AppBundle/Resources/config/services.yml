@@ -1,0 +1,25 @@
+services:
+    buzz.client:
+        class: Buzz\Client\FileGetContents
+        calls: 
+             - [setTimeout, [30]]
+
+    buzz.message_factory:
+        class: Buzz\Message\Factory\Factory
+
+    buzz.browser:
+       class: Buzz\Browser
+       arguments:
+             - @buzz.client
+             - @buzz.message_factory
+
+    buzz.client.ebutik:
+        class: Buzz\Client\Curl
+        calls: 
+             - [setTimeout, [30]]
+
+    buzz.browser.ebutik:
+       class: Buzz\Browser
+       arguments:
+             - @buzz.client.ebutik
+             - @buzz.message_factory

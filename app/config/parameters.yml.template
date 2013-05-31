@@ -1,0 +1,23 @@
+parameters:
+    database_driver:   pdo_mysql
+    database_host:     127.0.0.1
+    database_port:     ~
+    database_name:     ordermap
+    database_user:     root
+    database_password: root
+
+    mailer_transport:  smtp
+    mailer_host:       127.0.0.1
+    mailer_user:       ~
+    mailer_password:   ~
+
+    locale:            sv
+    secret:            ThisTokenIsNotSoSecretChangeIt
+
+    ebutik.url:         www.foobar.se
+    ebutik.username:    foo
+    ebutik.password:    bar
+
+    general_import.url: www.foobar.se
+    general_import.username: foo
+    general_import.password: bar
