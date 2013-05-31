@@ -21,3 +21,5 @@ parameters:
     general_import.url: www.foobar.se
     general_import.username: foo
     general_import.password: bar
+
+    user_password:      foo
